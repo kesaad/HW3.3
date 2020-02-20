@@ -27,11 +27,11 @@ namespace ContosoUniversity.Migrations
                 oldMaxLength: 50,
                 oldNullable: true);
 
-            //migrationBuilder.AddColumn<int>(
-            //    name: "DepartmentID",
-            //    table: "Course",
-            //    nullable: false,
-            //    defaultValue: 0);
+            migrationBuilder.AddColumn<int>(
+                name: "DepartmentID",
+                table: "Course",
+                nullable: false,
+                defaultValue: 0);
 
             migrationBuilder.CreateTable(
                 name: "Instructor",
@@ -103,6 +103,12 @@ namespace ContosoUniversity.Migrations
                 table: "Course",
                 nullable: false,
                 defaultValue: 1);
+
+            //migrationBuilder.AddColumn<int>(
+            //    name: "DepartmentID",
+            //    table: "Course",
+            //    nullable: false,
+            //    defaultValue: 0);
 
 
             migrationBuilder.CreateTable(
